@@ -1,0 +1,9 @@
+.likeUniq {
+    width: 80%;
+    height: 20vw;
+    margin: 25px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3%;
+}

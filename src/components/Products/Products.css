@@ -1,0 +1,12 @@
+.products {
+    width: 90%;
+    margin: 30px 5%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+

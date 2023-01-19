@@ -1,0 +1,105 @@
+
+.nav_categories {
+    position: relative;
+}
+
+.nav__box {
+    display: none;
+}
+
+.nav__box__line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-block: 4px;
+    border-radius: 4px;
+    transition: transform .25s ease-in-out;
+}
+
+.nav_categories:hover .nav__box__line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.nav_categories:hover .nav__box__line:nth-child(2) {
+    opacity: 0;
+}
+
+.nav_categories:hover .nav__box__line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.categories__list {
+    display: none;
+}
+
+.nav__box:hover ~ .categories__list {
+    transition: transform .25s ease-in;
+    transform: scale(1);
+}
+
+.categories__list:hover {
+    transform: scale(1);
+}
+
+.categories__p {
+    color: var(--color);
+    cursor: pointer;
+    font-size: 1.1em;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.categories__p:hover ~ :not(:hover) {
+    opacity: .4;
+}
+
+.categories__p::first-letter, .categoriesAct__p::first-letter {
+    text-transform: uppercase;
+}
+
+.categoriesAct__p {
+    transform: scale(1.05);
+    cursor: pointer;
+    font-size: 1.05em;
+    position: relative;
+    color: mediumblue;
+}
+
+.categoriesAct__p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    height: 1px;
+    width: 90%;
+    background-color: #fff;
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav__box {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: block;
+    }
+
+    .categories__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 100vh;
+        transform-origin: right;
+        transition: transform .25s ease-in;
+        transform: scale(0);
+        position: absolute;
+        right: -10px;
+        top: 29px;
+        background: silver;
+        width: 150px;
+        text-align: center;
+        padding-top: 25px;
+    }
+}

@@ -1,0 +1,20 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-vector/movie-time-cinema-film-strip-background_1017-36653.jpg?w=2000");
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --font-size: 1.5em;
+    --color: rgb(43, 117, 212);
+}

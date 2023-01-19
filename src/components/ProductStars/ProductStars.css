@@ -1,0 +1,16 @@
+.on {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: orange;
+}
+.off {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #ccc;
+}
